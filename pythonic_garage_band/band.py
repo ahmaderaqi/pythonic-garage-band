@@ -1,10 +1,27 @@
+import abc
 class Musician:
     def __init__(self,name):
         self.name=name
+    
+    def get_instrument(self):
+        pass
+    
+    def play_solo(self):
+        pass
+    
+    def __str__(self):
+        return f"My name is {self.name}"
+    
+    def __repr__(self) -> str:
+        return f"My name is {self.name}"
+    
         
 
 
 class Guitarist(Musician):
+    """
+    
+    """
     def __init__(self, name):
         super().__init__(name)
     
